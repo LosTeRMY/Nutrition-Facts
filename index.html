@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Taste Survey</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,100;1,400;1,500;1,600&display=swap"rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg">
+
+    <!-- Header -->
+
+    <div class="header">
+        <h1 id="title">Music Taste Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <form id="survey-form">
+
+        <!-- Personal Info -->
+
+        <div class="personal-info">
+            <div>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" min="13" max="99" placeholder="Age">
+            </div>
+        </div>
+
+        <!-- Music Genre -->
+
+        <div class="genre">
+            <label for="dropdown">What's your favorite music genre?</label>
+            <div>
+                <select id="dropdown" aria-placeholder="test">
+                    <option disabled="" selected="" value="">Select genre</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="hiphop">Hip-Hop</option>
+                    <option value="classical">Classical</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="country">Country</option>
+                    <option value="electronic">Electronic</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- How often do you listen to music? -->
+
+        <div class="frequency">
+            <label>How often do you listen to music?</label>
+            <div>
+                <input type="radio" id="daily" name="frequency" value="daily" required>
+                <label for="daily">Daily
+            </div>
+            <div>
+                <input type="radio" id="weekly" name="frequency" value="daily" required>
+                <label for="weekly">Weekly
+            </div>
+            <div>
+                <input type="radio" id="occasionaly" name="frequency" value="daily" required>
+                <label for="occasionaly">Occasionaly
+            </div>
+            <div>
+                <input type="radio" id="rarely" name="frequency" value="daily" required>
+                <label for="rarely">Rarely
+            </div>
+        </div>
+
+        <!-- Music Platform Checkboxes -->
+
+        <div class="platform">
+            <label for="">Which music platforms do you use?</label>
+            <div>
+                <input type="checkbox" id="spotify" name="platform" value="Spotify">
+                <label for="spotify">Spotify</label>
+            </div>
+            <div>
+                <input type="checkbox" id="apple-music" name="platform" value="Apple Music">
+                <label for="apple-music">Apple Music</label>
+            </div>
+            <div>
+                <input type="checkbox" id="youtube" name="platform" value="YouTube">
+                <label for="youtube">YouTube</label>
+            </div>
+            <div>
+                <input type="checkbox" id="soundcloud" name="platform" value="SoundCloud">
+                <label for="soundcloud">SoundCloud</label>
+            </div>
+            <div>
+                <input type="checkbox" id="other" name="platform" value="Other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+        <!-- Textarea -->
+
+        <div class="textarea">
+            <label for="comments">Any additional comments or favorite songs?</label>
+            <div>
+                <textarea id="comments" name="comments" rows="5" cols="50"
+                    placeholder="Tell us more about your music tastes..."></textarea>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+
+        <div>
+            <input type="submit" id="submit" value="submit">
+        </div>
+
+    </form>
+
+    </div>
+</body>
